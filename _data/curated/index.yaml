@@ -1,8 +1,172 @@
 ---
+- curated_id: 2821c214fe7b8cbd783ac4d79ab36639
+  item_date: "2013-09-27 00:00:00"
+  title: 'New Dev.Bronto Content: Migrate from API V3 to V4'
+  url: http://blogs.bronto.com/product/new-devbronto-content-migrate-api-v3-v4
+  domain: blogs.bronto.com
+  image: ""
 - curated_id: a59eee0198ede2fc2a9cfe3deff74662
   item_date: "2015-01-07 00:00:00"
   title: 'Factual Featured Partner: Snips'
   url: http://blog.factual.com
   domain: blog.factual.com
+  image: ""
+- curated_id: 290e3c57e035cf06b9afca1ccdca7656
+  item_date: "2015-06-03 07:01:57"
+  title: Migrate DataFlex and Btrieve Applications - Mertech.com
+  url: https://www.mertech.com/
+  domain: www.mertech.com
+  image: ""
+- curated_id: e70140bd3d491575e52162aa547c532e
+  item_date: "2015-06-05 00:00:00"
+  title: Smart Player to Brightcove Player Migration Guide
+  url: http://docs.brightcove.com/en/video-cloud/brightcove-player/guides/migration-guide.html
+  domain: docs.brightcove.com
+  image: ""
+- curated_id: d59fe9b5d748f9a6bed55493cd4d0893
+  item_date: "2015-06-16 00:00:00"
+  title: BitTitan Eliminates Barriers to Microsoft Office 365 Adoption for Universities
+  url: http://blog.bittitan.com/2015/06/16/bittitan-eliminates-barriers-to-microsoft-office-365-adoption-for-universities/
+  domain: blog.bittitan.com
+  image: ""
+- curated_id: 1d216ecdf0a507a35c39c7425b2296a2
+  item_date: "2015-06-18 00:00:00"
+  title: 'Article: The Cloud Migration Checklist'
+  url: http://www.infoq.com/articles/cloud-migration-checklist
+  domain: www.infoq.com
+  image: ""
+- curated_id: dcdb4f1f60f182dbce9df48c2904232f
+  item_date: "2015-06-21 00:00:00"
+  title: 'Avoiding cloudfall: A systematic approach to cloud migration'
+  url: https://18f.gsa.gov/2015/06/22/avoiding-cloudfall/
+  domain: 18f.gsa.gov
+  image: ""
+- curated_id: 107df36a90016cf697f1e08992e53e58
+  item_date: "2016-01-28 00:00:00"
+  title: Migration from Parse to Backendless
+  url: https://backendless.com/migration-from-parse-to-backendless/
+  domain: backendless.com
+  image: ""
+- curated_id: b11eb66fa76bd0d1a5ef3dad0edeaea1
+  item_date: "2016-02-03 00:00:00"
+  title: The Right Things to Think About Before Migrating from Parse
+  url: http://www.kinvey.com/blog/4424/the-right-things-to-think-about-before-migrating-from-parse
+  domain: www.kinvey.com
+  image: ""
+- curated_id: e64e8789c49a3e1c030e5b5fe85b27de
+  item_date: "2016-02-07 00:00:00"
+  title: Migrating Known
+  url: http://bavatuesdays.com/migrating-known/
+  domain: bavatuesdays.com
+  image: ""
+- curated_id: ba8ebeebaf6f8a48be8e46c08bd3e08b
+  item_date: "2016-03-11 00:00:00"
+  title: Microsoft launches OneNote importer tool for Evernote users
+  url: http://venturebeat.com/2016/03/11/microsoft-launches-onenote-importer-tool-for-evernote-users/
+  domain: venturebeat.com
+  image: ""
+- curated_id: 67fda89d0e795e7e1d1a9c5c88210d6b
+  item_date: "2016-03-15 00:00:00"
+  title: AWS Database Migration Service
+  url: https://aws.amazon.com/blogs/aws/aws-database-migration-service/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: e09c37b1b98cf5a3cf9e3151ad206543
+  item_date: "2016-03-16 00:00:00"
+  title: Amazon launches AWS Database Migration Service out of preview to all customers
+  url: http://venturebeat.com/2016/03/16/amazon-launches-aws-database-migration-service-out-of-preview-to-all-customers/
+  domain: venturebeat.com
+  image: ""
+- curated_id: b941d844f6ac08a42e11fe6d9f6a03a7
+  item_date: "2016-03-22 00:00:00"
+  title: Netflix Cloud Migration Complete
+  url: http://www.infoq.com/news/2016/03/Netflix-Cloud-Migration
+  domain: www.infoq.com
+  image: ""
+- curated_id: f104f20a42a236f1879c445c0c3710a2
+  item_date: "2016-03-26 00:00:00"
+  title: AWS Launches Relational Database Migration Service
+  url: http://www.infoq.com/news/2016/03/aws-database-migration-service
+  domain: www.infoq.com
+  image: ""
+- curated_id: 04435fc935b3ea221378bd704161b342
+  item_date: "2016-03-29 00:00:00"
+  title: BitTitan Launches Migration-as-a-Service to Create New Office 365 Revenue
+    for Partners
+  url: http://blog.bittitan.com/2016/03/29/bittitan-launches-migration-as-a-service-to-create-new-office-365-revenue-for-partners/
+  domain: blog.bittitan.com
+  image: ""
+- curated_id: f0afa22890ba4ae815a8de82208b9b66
+  item_date: "2016-05-12 00:00:00"
+  title: Feature Flagging to Mitigate Risk in Database Migration
+  url: https://dzone.com/articles/feature-flagging-to-mitigate-risk-in-database-migr
+  domain: dzone.com
+  image: ""
+- curated_id: 8730f7748ff97dd9b952d4e92d7e5d15
+  item_date: "2016-05-23 00:00:00"
+  title: Introducing Janrain Export Services
+  url: http://www.janrain.com/blog/introducing-janrain-export-services/
+  domain: www.janrain.com
+  image: ""
+- curated_id: 282dc3ba215162737405e8139f77a446
+  item_date: "2016-06-06 00:00:00"
+  title: Migration of Parse Apps to Red Hat Mobile Application Platform
+  url: https://dzone.com/articles/migration-of-parse-apps-to-red-hat-mobile-applicat
+  domain: dzone.com
+  image: ""
+- curated_id: 12032aef8668796f05e249ffbf55fc7f
+  item_date: "2016-06-14 00:00:00"
+  title: Export API and Access to IPTC IPTC-IIM and MS Project Metadata
+  url: http://www.groupdocs.com/blog/read-iptc-iim-ms-project-metadata-export-excel-dataset-csv
+  domain: www.groupdocs.com
+  image: ""
+- curated_id: 2d3afc6570041007f4d15ca90162a48b
+  item_date: "2016-06-16 00:00:00"
+  title: 'Introducing the Google Sheets API v4: Transferring data from a SQL database
+    to a Sheet'
+  url: https://developers.googleblog.com/2016/06/introducing-google-sheets-api-v4.html
+  domain: developers.googleblog.com
+  image: ""
+- curated_id: f05e6fb8b972b0243f1ffcd65e8d18fa
+  item_date: "2016-06-29 00:00:00"
+  title: Box launches Shuttle, aims to land data migration deals
+  url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
+  domain: www.zdnet.com
+  image: ""
+- curated_id: 51843bf21dd36fc6ee341622045037c1
+  item_date: "2016-06-30 00:00:00"
+  title: How to transfer your Evernote notes to Apple Notes
+  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
+  domain: www.businessinsider.com
+  image: ""
+- curated_id: ef6952b47c43f476b295d68d9fe2d453
+  item_date: "2016-06-30 00:00:00"
+  title: Replacing legacy data software with CloverETL
+  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
+  domain: www.cloveretl.com
+  image: ""
+- curated_id: e570901383a2e7030ef2991f0aff9169
+  item_date: "2016-07-06 00:00:00"
+  title: Android Dropbox API ? Upgrade from Version 1 to Version 2
+  url: https://cloudrail.com/android-dropbox-api-upgrade-version-1-version-2/
+  domain: cloudrail.com
+  image: ""
+- curated_id: cc384c91fc92067ca639f16b7a6be1cc
+  item_date: "2016-07-19 00:00:00"
+  title: SashiDo ? Migrate all Parse files to your own Amazon S3
+  url: https://mv.sashido.io
+  domain: mv.sashido.io
+  image: ""
+- curated_id: 74687ac874a3bea85767c760bfca651f
+  item_date: "2016-08-26 00:00:00"
+  title: Database Migration in Continuous Integration Processes
+  url: https://dzone.com/articles/flyway-db-migration-in-continuous-integration-proc
+  domain: dzone.com
+  image: ""
+- curated_id: 8a3ec3004f7b6af084c8ca884aed6895
+  item_date: "2016-11-01 00:00:00"
+  title: Announcing Expert Migration Services
+  url: http://www.activecampaign.com/blog/activecampaign-migration-services/
+  domain: www.activecampaign.com
   image: ""
 ...
