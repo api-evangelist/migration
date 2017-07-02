@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: 51843bf21dd36fc6ee341622045037c1
-  item_date: "2016-06-30 00:00:00"
-  title: How to transfer your Evernote notes to Apple Notes
-  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
-  domain: www.businessinsider.com
-  image: ""
 - curated_id: ef6952b47c43f476b295d68d9fe2d453
   item_date: "2016-06-30 00:00:00"
   title: Replacing legacy data software with CloverETL
   url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
   domain: www.cloveretl.com
+  image: ""
+- curated_id: 51843bf21dd36fc6ee341622045037c1
+  item_date: "2016-06-30 00:00:00"
+  title: How to transfer your Evernote notes to Apple Notes
+  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
+  domain: www.businessinsider.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -282,5 +282,54 @@
     #FacebookAds #analytics https://t.co/xAOsWkxqQX'
   url: https://twitter.com/APIrise/statuses/858036356253192192
   domain: twitter.com
+  image: ""
+- curated_id: b4xX282kQ9FAxkxcTTl6litd4bsIad1WXC3AOIleGAM=_15c1d46dc04:7b14c5:452180c4
+  item_date: "2017-05-18 13:35:31"
+  title: Migrating Applications from OpenShift v2 to OpenShift 3
+  url: https://blog.openshift.com/?p=11323
+  domain: blog.openshift.com
+  image: ""
+- curated_id: nQDK/hRFOADw0JpnSfBL1cZFniqKdDqcr8viSWXuoP4=_15c5fc11871:5c31cd7:cfb784e9
+  item_date: "2017-05-30 17:00:00"
+  title: Vagrant Cloud Migration Announcement
+  url: https://www.hashicorp.com/blog/vagrant-cloud-migration-announcement/
+  domain: www.hashicorp.com
+  image: ""
+- curated_id: qhhWIcDYC9w26Atz2YPVGWlZ3ijpzn6VVyZmZhvr38o=_15c9c68e79f:232b31a:d0168500
+  item_date: "2017-06-12 06:01:37"
+  title: Introducing Our SendGrid Template Migration Tool
+  url: https://www.sparkpost.com/?p=21845
+  domain: www.sparkpost.com
+  image: ""
+- curated_id: FZ/2GLZp/a8FriFm6BqxYgMelBuYPP5oD17BctyF8kM=_15caf521eb3:1880d1:32554199
+  item_date: "2017-06-15 17:59:47"
+  title: "Datafiniti Completes Phase Two of Elasticsearch Migration and Expands Query
+    Capabilities to\u2026"
+  url: https://medium.com/p/545d2d105df3
+  domain: medium.com
+  image: ""
+- curated_id: QAaDgMpT7DqGuD1Yj9LF2HDECuy1+1dE9pGubJkFSCw=_15ce411bbda:2f425bc:517b1451
+  item_date: "2017-06-26 04:00:55"
+  title: Measuring a Successful Cloud Migration
+  url: http://blog.rackspace.com/?p=43097
+  domain: blog.rackspace.com
+  image: ""
+- curated_id: QAaDgMpT7DqGuD1Yj9LF2HDECuy1+1dE9pGubJkFSCw=_15cee7d8bc6:3f5668c:5b78a817
+  item_date: "2017-06-28 04:30:50"
+  title: 'Private Cloud: An Easier Method for Migrating Existing Applications'
+  url: http://blog.rackspace.com/?p=43109
+  domain: blog.rackspace.com
+  image: ""
+- curated_id: AxQQtvE65+QaqkYOryE+b2QKezSYDbTCnNIX6p/weC0=_15cf387b39c:4770842:5b78a817
+  item_date: "2017-06-29 03:38:08"
+  title: Cloud Development and Data Migration
+  url: https://medium.com/p/3f1b4a8ed8d
+  domain: medium.com
+  image: ""
+- curated_id: nQDK/hRFOADw0JpnSfBL1cZFniqKdDqcr8viSWXuoP4=_15cfadaf86b:53b5abc:5b78a817
+  item_date: "2017-06-29 17:00:00"
+  title: HashiCorp Vagrant Cloud Migration Completed
+  url: https://www.hashicorp.com/blog/vagrant-cloud-migration-completed/
+  domain: www.hashicorp.com
   image: ""
 ...
