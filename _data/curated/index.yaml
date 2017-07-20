@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: ef6952b47c43f476b295d68d9fe2d453
-  item_date: "2016-06-30 00:00:00"
-  title: Replacing legacy data software with CloverETL
-  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
-  domain: www.cloveretl.com
-  image: ""
 - curated_id: 51843bf21dd36fc6ee341622045037c1
   item_date: "2016-06-30 00:00:00"
   title: How to transfer your Evernote notes to Apple Notes
   url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
   domain: www.businessinsider.com
+  image: ""
+- curated_id: ef6952b47c43f476b295d68d9fe2d453
+  item_date: "2016-06-30 00:00:00"
+  title: Replacing legacy data software with CloverETL
+  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
+  domain: www.cloveretl.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -343,5 +343,11 @@
   title: Migrating WordPress to OpenShift Online 3 Paid Tier
   url: https://blog.openshift.com/?p=12584
   domain: blog.openshift.com
+  image: ""
+- curated_id: 8gWX9gjCXu6b2pD1eYQk9otwiJsMWRDfIpqRBziTqiI=_15d5b37bcc1:52a61b:898d1914
+  item_date: "2017-07-19 06:56:06"
+  title: "Influencer: Don\u2019t Let These 5 Common Barriers Deter Your Cloud Migration"
+  url: https://admin.dyn.com/?p=57394
+  domain: admin.dyn.com
   image: ""
 ...
