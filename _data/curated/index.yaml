@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: 51843bf21dd36fc6ee341622045037c1
-  item_date: "2016-06-30 00:00:00"
-  title: How to transfer your Evernote notes to Apple Notes
-  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
-  domain: www.businessinsider.com
-  image: ""
 - curated_id: ef6952b47c43f476b295d68d9fe2d453
   item_date: "2016-06-30 00:00:00"
   title: Replacing legacy data software with CloverETL
   url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
   domain: www.cloveretl.com
+  image: ""
+- curated_id: 51843bf21dd36fc6ee341622045037c1
+  item_date: "2016-06-30 00:00:00"
+  title: How to transfer your Evernote notes to Apple Notes
+  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
+  domain: www.businessinsider.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -349,5 +349,23 @@
   title: "Influencer: Don\u2019t Let These 5 Common Barriers Deter Your Cloud Migration"
   url: https://admin.dyn.com/?p=57394
   domain: admin.dyn.com
+  image: ""
+- curated_id: Ihfxwji+t22ShjrcAU9C1jjgW/GnKU96aASgOecQBk0=_15e078be484:163b261:41b98b00
+  item_date: "2017-07-31 08:30:15"
+  title: Migrating Existing Projects to Salesforce DX
+  url: http://developer.salesforce.com/blogs/developer-relations/?p=185921
+  domain: developer.salesforce.com
+  image: ""
+- curated_id: AxQQtvE65+QaqkYOryE+b2QKezSYDbTCnNIX6p/weC0=_15dc39274ad:225bfe:6c0c5382
+  item_date: "2017-08-08 13:38:59"
+  title: "Why I\u2019m dumping Firebase for Web"
+  url: https://medium.com/p/cd64a78cb43e
+  domain: medium.com
+  image: ""
+- curated_id: aTKLPW9AeQAh09DpOW/0/mK2tQUNNgIyAi3xy7MVsb4=_15e30663c3a:4e76e6:56b346f
+  item_date: "2017-08-29 09:52:26"
+  title: Tincup
+  url: https://tincup.io/
+  domain: tincup.io
   image: ""
 ...
