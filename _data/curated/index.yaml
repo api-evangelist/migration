@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: ef6952b47c43f476b295d68d9fe2d453
-  item_date: "2016-06-30 00:00:00"
-  title: Replacing legacy data software with CloverETL
-  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
-  domain: www.cloveretl.com
-  image: ""
 - curated_id: 51843bf21dd36fc6ee341622045037c1
   item_date: "2016-06-30 00:00:00"
   title: How to transfer your Evernote notes to Apple Notes
   url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
   domain: www.businessinsider.com
+  image: ""
+- curated_id: ef6952b47c43f476b295d68d9fe2d453
+  item_date: "2016-06-30 00:00:00"
+  title: Replacing legacy data software with CloverETL
+  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
+  domain: www.cloveretl.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -367,5 +367,11 @@
   title: Tincup
   url: https://tincup.io/
   domain: tincup.io
+  image: ""
+- curated_id: QAaDgMpT7DqGuD1Yj9LF2HDECuy1+1dE9pGubJkFSCw=_15e615ab9ba:79a8a52:feeb522d
+  item_date: "2017-09-08 04:30:48"
+  title: Check Out Our Public Cloud Migration Cheat Sheet
+  url: http://blog.rackspace.com/?p=43524
+  domain: blog.rackspace.com
   image: ""
 ...
