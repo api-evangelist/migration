@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: ef6952b47c43f476b295d68d9fe2d453
-  item_date: "2016-06-30 00:00:00"
-  title: Replacing legacy data software with CloverETL
-  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
-  domain: www.cloveretl.com
-  image: ""
 - curated_id: 51843bf21dd36fc6ee341622045037c1
   item_date: "2016-06-30 00:00:00"
   title: How to transfer your Evernote notes to Apple Notes
   url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
   domain: www.businessinsider.com
+  image: ""
+- curated_id: ef6952b47c43f476b295d68d9fe2d453
+  item_date: "2016-06-30 00:00:00"
+  title: Replacing legacy data software with CloverETL
+  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
+  domain: www.cloveretl.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -397,5 +397,23 @@
   title: Migrating a database from InnoDB to MyRocks
   url: https://code.facebook.com/posts/1478526992216557/migrating-a-database-from-innodb-to-myrocks/?utm_source=codedot_rss_feed&utm_medium=rss&utm_campaign=RSS+Feed
   domain: code.facebook.com
+  image: ""
+- curated_id: QAaDgMpT7DqGuD1Yj9LF2HDECuy1+1dE9pGubJkFSCw=_15ee2def6d6:5b1c3a2:c84bd0de
+  item_date: "2017-10-03 08:26:49"
+  title: Successfully Migrating Your Database to AWS
+  url: http://blog.rackspace.com/?p=43807
+  domain: blog.rackspace.com
+  image: ""
+- curated_id: QAaDgMpT7DqGuD1Yj9LF2HDECuy1+1dE9pGubJkFSCw=_15ef19affbc:9a0e5d:3522b906
+  item_date: "2017-10-06 05:00:35"
+  title: "Enabling Epsilon\u2019s Seamless Migration to AWS"
+  url: http://blog.rackspace.com/?p=43725
+  domain: blog.rackspace.com
+  image: ""
+- curated_id: xSjdJfPCkNisMpBgOt+tuQbeFffex9D91WxfhFeMbbc=_15ef22aaa28:98fbb1:ceb70d89
+  item_date: "2017-10-06 07:35:44"
+  title: "Dealing with Data Migrations on Multi Tenant \u2014 Laravel"
+  url: https://medium.com/p/71089b9a838f
+  domain: medium.com
   image: ""
 ...
