@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: ef6952b47c43f476b295d68d9fe2d453
-  item_date: "2016-06-30 00:00:00"
-  title: Replacing legacy data software with CloverETL
-  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
-  domain: www.cloveretl.com
-  image: ""
 - curated_id: 51843bf21dd36fc6ee341622045037c1
   item_date: "2016-06-30 00:00:00"
   title: How to transfer your Evernote notes to Apple Notes
   url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
   domain: www.businessinsider.com
+  image: ""
+- curated_id: ef6952b47c43f476b295d68d9fe2d453
+  item_date: "2016-06-30 00:00:00"
+  title: Replacing legacy data software with CloverETL
+  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
+  domain: www.cloveretl.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -414,6 +414,12 @@
   item_date: "2017-10-06 07:35:44"
   title: "Dealing with Data Migrations on Multi Tenant \u2014 Laravel"
   url: https://medium.com/p/71089b9a838f
+  domain: medium.com
+  image: ""
+- curated_id: AxQQtvE65+QaqkYOryE+b2QKezSYDbTCnNIX6p/weC0=_15f6ec0ac56:f89bc8:aa3e42e1
+  item_date: "2017-10-30 12:27:19"
+  title: Adventures in Migrating to Serverless
+  url: https://medium.com/p/a63556b39042
   domain: medium.com
   image: ""
 ...
