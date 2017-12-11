@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: 51843bf21dd36fc6ee341622045037c1
-  item_date: "2016-06-30 00:00:00"
-  title: How to transfer your Evernote notes to Apple Notes
-  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
-  domain: www.businessinsider.com
-  image: ""
 - curated_id: ef6952b47c43f476b295d68d9fe2d453
   item_date: "2016-06-30 00:00:00"
   title: Replacing legacy data software with CloverETL
   url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
   domain: www.cloveretl.com
+  image: ""
+- curated_id: 51843bf21dd36fc6ee341622045037c1
+  item_date: "2016-06-30 00:00:00"
+  title: How to transfer your Evernote notes to Apple Notes
+  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
+  domain: www.businessinsider.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -427,5 +427,11 @@
   title: 4 Pitfalls to Avoid During a Cloud Migration
   url: https://www.pagerduty.com/?p=38099
   domain: www.pagerduty.com
+  image: ""
+- curated_id: xwisz6ZyxTVQZF9ECim7wa+q4F1sMWUZt/heMa4JVws=_16031d85091:616788:541f3c40
+  item_date: "2017-12-07 07:01:28"
+  title: How to Transfer a MySQL Database Between Two Servers
+  url: https://dzone.com/articles/1870677
+  domain: dzone.com
   image: ""
 ...
