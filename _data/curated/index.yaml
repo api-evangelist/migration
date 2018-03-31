@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: ef6952b47c43f476b295d68d9fe2d453
-  item_date: "2016-06-30 00:00:00"
-  title: Replacing legacy data software with CloverETL
-  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
-  domain: www.cloveretl.com
-  image: ""
 - curated_id: 51843bf21dd36fc6ee341622045037c1
   item_date: "2016-06-30 00:00:00"
   title: How to transfer your Evernote notes to Apple Notes
   url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
   domain: www.businessinsider.com
+  image: ""
+- curated_id: ef6952b47c43f476b295d68d9fe2d453
+  item_date: "2016-06-30 00:00:00"
+  title: Replacing legacy data software with CloverETL
+  url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
+  domain: www.cloveretl.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -438,6 +438,18 @@
   item_date: "2017-12-17 14:56:42"
   title: Migration Data Portal
   url: http://thegovlab.org/?p=22162
+  domain: thegovlab.org
+  image: ""
+- curated_id: dnRmB76fym4hkmgsXBwtmLKNUV3FwG/JzTfREvhE440=_162730cb31c:751caf1:9f3b30f2
+  item_date: "2018-03-29 11:32:42"
+  title: The Potential and Practice of Data Collaboratives for Migration
+  url: http://thegovlab.org/?p=22904
+  domain: thegovlab.org
+  image: ""
+- curated_id: dnRmB76fym4hkmgsXBwtmLKNUV3FwG/JzTfREvhE440=_1627343bf8b:739c948:7d6c1c1c
+  item_date: "2018-03-29 12:19:10"
+  title: Data Collaboration and Data Responsibility for Migration
+  url: http://thegovlab.org/?p=22905
   domain: thegovlab.org
   image: ""
 ...
