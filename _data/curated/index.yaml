@@ -121,17 +121,17 @@
   url: http://www.zdnet.com/article/box-launches-shuttle-aims-to-land-data-migration-deals/
   domain: www.zdnet.com
   image: ""
-- curated_id: 51843bf21dd36fc6ee341622045037c1
-  item_date: "2016-06-30 00:00:00"
-  title: How to transfer your Evernote notes to Apple Notes
-  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
-  domain: www.businessinsider.com
-  image: ""
 - curated_id: ef6952b47c43f476b295d68d9fe2d453
   item_date: "2016-06-30 00:00:00"
   title: Replacing legacy data software with CloverETL
   url: http://www.cloveretl.com/blog/replacing-legacy-data-software-cloveretl/
   domain: www.cloveretl.com
+  image: ""
+- curated_id: 51843bf21dd36fc6ee341622045037c1
+  item_date: "2016-06-30 00:00:00"
+  title: How to transfer your Evernote notes to Apple Notes
+  url: http://www.businessinsider.com/how-to-transfer-evernote-notes-to-apple-notes-2016-6
+  domain: www.businessinsider.com
   image: ""
 - curated_id: e570901383a2e7030ef2991f0aff9169
   item_date: "2016-07-06 00:00:00"
@@ -457,5 +457,23 @@
   title: "Moving Historical Helpdesk Data to Freshdesk Shouldn\u2019t be a Nightmare"
   url: http://blog.freshdesk.com/?p=10887
   domain: blog.freshdesk.com
+  image: ""
+- curated_id: xwisz6ZyxTVQZF9ECim7wa+q4F1sMWUZt/heMa4JVws=_1645f82825b:520134e:aa514a55
+  item_date: "2018-07-03 02:03:00"
+  title: 'GitLab: We''re Moving From Azure to Google Cloud Platform'
+  url: https://dzone.com/articles/2304292
+  domain: dzone.com
+  image: ""
+- curated_id: xSjdJfPCkNisMpBgOt+tuQbeFffex9D91WxfhFeMbbc=_1647086f64c:170020:e8d3bdb3
+  item_date: "2018-07-05 14:14:27"
+  title: PostgreSQL RDS Creation/Migration in AWS
+  url: https://medium.com/p/cbae2901d460
+  domain: medium.com
+  image: ""
+- curated_id: xwisz6ZyxTVQZF9ECim7wa+q4F1sMWUZt/heMa4JVws=_164aca1012b:c2c0d57:386c987f
+  item_date: "2018-07-18 02:01:00"
+  title: "MongoShake \u2014 A MongoDB"
+  url: https://dzone.com/articles/2330186
+  domain: dzone.com
   image: ""
 ...
