@@ -1,0 +1,66 @@
+{
+  "id": "cutover-erp-2026-06",
+  "migration_project_id": "mig-2026-erp-aws",
+  "name": "ERP Production Cutover - June 15",
+  "description": "Production cutover of ERP database and application tier from on-prem Oracle to AWS Aurora PostgreSQL.",
+  "cutover_window": {
+    "start": "2026-06-15T02:00:00Z",
+    "end": "2026-06-15T06:00:00Z",
+    "timezone": "UTC"
+  },
+  "downtime_budget_minutes": 120,
+  "steps": [
+    {
+      "order": 1,
+      "name": "Freeze writes on source",
+      "owner": "dba-team",
+      "expected_duration_minutes": 10,
+      "status": "pending"
+    },
+    {
+      "order": 2,
+      "name": "Drain in-flight DMS replication tasks",
+      "owner": "data-eng",
+      "expected_duration_minutes": 15,
+      "status": "pending"
+    },
+    {
+      "order": 3,
+      "name": "Run final row-count and checksum parity",
+      "owner": "data-eng",
+      "expected_duration_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "order": 4,
+      "name": "Swap application DNS to Aurora endpoint",
+      "owner": "platform-team",
+      "expected_duration_minutes": 10,
+      "status": "pending"
+    },
+    {
+      "order": 5,
+      "name": "Run smoke tests and business sign-off",
+      "owner": "qa-team",
+      "expected_duration_minutes": 45,
+      "status": "pending"
+    }
+  ],
+  "validation_gates": [
+    "row-count-parity",
+    "checksum-match",
+    "smoke-tests-green",
+    "business-sign-off"
+  ],
+  "rollback_plan": {
+    "trigger": "Smoke tests fail or data parity below 99.99%",
+    "max_time_minutes": 30,
+    "steps": [
+      "Re-enable writes on source",
+      "Redirect application traffic to source",
+      "Pause replication"
+    ]
+  },
+  "status": "scheduled",
+  "approvers": ["cto", "head-of-platform", "head-of-data"]
+}

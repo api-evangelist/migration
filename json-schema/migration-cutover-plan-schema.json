@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/migration/refs/heads/main/json-schema/migration-cutover-plan-schema.json",
+  "title": "CutoverPlan",
+  "description": "A cutover plan describing the ordered steps, windows, and rollback procedures for transitioning from a source environment to a target environment during a migration.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the cutover plan.",
+      "example": "cutover-erp-2026-06"
+    },
+    "migration_project_id": {
+      "type": "string",
+      "description": "Identifier of the migration project this cutover plan belongs to.",
+      "example": "mig-2026-erp-aws"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the cutover plan.",
+      "example": "ERP Production Cutover - June 15"
+    },
+    "description": {
+      "type": "string",
+      "description": "Summary of the cutover plan.",
+      "example": "Production cutover of ERP database and application tier from on-prem Oracle to AWS Aurora PostgreSQL."
+    },
+    "cutover_window": {
+      "type": "object",
+      "description": "Planned cutover window.",
+      "properties": {
+        "start": { "type": "string", "format": "date-time", "example": "2026-06-15T02:00:00Z" },
+        "end": { "type": "string", "format": "date-time", "example": "2026-06-15T06:00:00Z" },
+        "timezone": { "type": "string", "example": "UTC" }
+      },
+      "required": ["start", "end"]
+    },
+    "downtime_budget_minutes": {
+      "type": "integer",
+      "description": "Maximum acceptable downtime in minutes during the cutover.",
+      "example": 120
+    },
+    "steps": {
+      "type": "array",
+      "description": "Ordered list of cutover steps.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "order": { "type": "integer", "example": 1 },
+          "name": { "type": "string", "example": "Freeze writes on source" },
+          "owner": { "type": "string", "example": "dba-team" },
+          "expected_duration_minutes": { "type": "integer", "example": 10 },
+          "status": {
+            "type": "string",
+            "enum": ["pending", "in-progress", "completed", "failed", "skipped"],
+            "example": "pending"
+          }
+        },
+        "required": ["order", "name"]
+      }
+    },
+    "validation_gates": {
+      "type": "array",
+      "description": "Required validation checks before the cutover is considered successful.",
+      "items": { "type": "string" },
+      "example": [
+        "row-count-parity",
+        "checksum-match",
+        "smoke-tests-green",
+        "business-sign-off"
+      ]
+    },
+    "rollback_plan": {
+      "type": "object",
+      "description": "Procedure to roll back to the source if validation fails.",
+      "properties": {
+        "trigger": { "type": "string", "example": "Smoke tests fail or data parity below 99.99%" },
+        "max_time_minutes": { "type": "integer", "example": 30 },
+        "steps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "example": [
+            "Re-enable writes on source",
+            "Redirect application traffic to source",
+            "Pause replication"
+          ]
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the cutover plan.",
+      "enum": ["draft", "scheduled", "in-progress", "completed", "rolled-back", "cancelled"],
+      "example": "scheduled"
+    },
+    "approvers": {
+      "type": "array",
+      "description": "Stakeholders who must approve the cutover.",
+      "items": { "type": "string" },
+      "example": ["cto", "head-of-platform", "head-of-data"]
+    }
+  },
+  "required": ["id", "migration_project_id", "name", "cutover_window", "steps", "status"]
+}

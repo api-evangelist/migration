@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/migration/refs/heads/main/json-schema/migration-migration-project-schema.json",
+  "title": "MigrationProject",
+  "description": "Represents a migration project moving workloads, data, or schemas from a source environment to a target environment.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the migration project.",
+      "example": "mig-2026-erp-aws"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the migration project.",
+      "example": "ERP On-Prem to AWS Migration"
+    },
+    "description": {
+      "type": "string",
+      "description": "Summary of what is being migrated and why.",
+      "example": "Migrate Oracle-based ERP system from on-premise VMware to AWS EC2 with Aurora PostgreSQL backend."
+    },
+    "migration_type": {
+      "type": "string",
+      "description": "Category of migration being performed.",
+      "enum": [
+        "cloud",
+        "database",
+        "data",
+        "tenant",
+        "schema",
+        "api",
+        "code",
+        "content"
+      ],
+      "example": "database"
+    },
+    "strategy": {
+      "type": "string",
+      "description": "High-level migration strategy.",
+      "enum": [
+        "rehost",
+        "replatform",
+        "refactor",
+        "repurchase",
+        "retire",
+        "retain"
+      ],
+      "example": "replatform"
+    },
+    "source": {
+      "type": "object",
+      "description": "Source environment being migrated away from.",
+      "properties": {
+        "name": { "type": "string", "example": "On-Prem Oracle 19c" },
+        "platform": { "type": "string", "example": "Oracle Database" },
+        "region": { "type": "string", "example": "us-datacenter-1" }
+      },
+      "required": ["name"]
+    },
+    "target": {
+      "type": "object",
+      "description": "Target environment being migrated to.",
+      "properties": {
+        "name": { "type": "string", "example": "AWS Aurora PostgreSQL" },
+        "platform": { "type": "string", "example": "Amazon Aurora" },
+        "region": { "type": "string", "example": "us-east-1" }
+      },
+      "required": ["name"]
+    },
+    "tool": {
+      "type": "string",
+      "description": "Migration tool or platform used to perform the migration.",
+      "example": "AWS Database Migration Service"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the migration project.",
+      "enum": [
+        "planning",
+        "assessment",
+        "in-progress",
+        "cutover",
+        "validation",
+        "completed",
+        "rolled-back",
+        "cancelled"
+      ],
+      "example": "in-progress"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the migration project started.",
+      "example": "2026-05-01T08:00:00Z"
+    },
+    "target_cutover_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Planned cutover timestamp for go-live on the target.",
+      "example": "2026-06-15T02:00:00Z"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the migration project completed.",
+      "example": "2026-06-15T06:00:00Z"
+    },
+    "owners": {
+      "type": "array",
+      "description": "Responsible owners or teams for the migration.",
+      "items": { "type": "string" },
+      "example": ["platform-team", "data-eng"]
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing this migration project.",
+      "items": { "type": "string" },
+      "example": ["database", "cloud", "aws"]
+    }
+  },
+  "required": ["id", "name", "migration_type", "source", "target", "status"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "mig-2026-erp-aws",
+  "name": "ERP On-Prem to AWS Migration",
+  "description": "Migrate Oracle-based ERP system from on-premise VMware to AWS EC2 with Aurora PostgreSQL backend.",
+  "migration_type": "database",
+  "strategy": "replatform",
+  "source": {
+    "name": "On-Prem Oracle 19c",
+    "platform": "Oracle Database",
+    "region": "us-datacenter-1"
+  },
+  "target": {
+    "name": "AWS Aurora PostgreSQL",
+    "platform": "Amazon Aurora",
+    "region": "us-east-1"
+  },
+  "tool": "AWS Database Migration Service",
+  "status": "in-progress",
+  "started_at": "2026-05-01T08:00:00Z",
+  "target_cutover_at": "2026-06-15T02:00:00Z",
+  "owners": ["platform-team", "data-eng"],
+  "tags": ["database", "cloud", "aws", "oracle-to-postgres"]
+}

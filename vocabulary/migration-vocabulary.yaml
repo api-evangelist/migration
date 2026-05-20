@@ -1,0 +1,330 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Migration
+  description: Vocabulary for the migration topic, covering cloud migration, database migration, data movement, schema migration, tenant migration, and API/code migration platforms.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: AWS Database Migration Service
+      namespace: amazon-dms
+      status: active
+    - name: AWS Application Migration Service
+      namespace: amazon-migration-hub
+      status: active
+    - name: Azure Migrate
+      namespace: microsoft-azure-migrate
+      status: active
+    - name: Google Cloud Migration Center
+      namespace: google-cloud-migration-center
+      status: active
+    - name: Google Cloud Datastream
+      namespace: google-cloud-datastream
+      status: active
+    - name: Airbyte
+      namespace: airbyte
+      status: active
+    - name: Fivetran
+      namespace: fivetran
+      status: active
+    - name: Oracle GoldenGate
+      namespace: oracle-goldengate
+      status: active
+    - name: Debezium
+      namespace: debezium
+      status: active
+    - name: dbt
+      namespace: dbt
+      status: active
+
+  resources:
+    - name: migration-projects
+      description: Top-level migration efforts moving workloads, data, or schemas from a source to a target
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+        - start
+        - pause
+        - resume
+        - cancel
+    - name: cutover-plans
+      description: Ordered runbooks coordinating the production cutover from source to target
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - approve
+        - execute
+        - rollback
+    - name: migration-steps
+      description: Individual steps within a cutover plan or migration runbook
+      actions:
+        - list
+        - get
+        - start
+        - complete
+        - skip
+        - fail
+    - name: replication-streams
+      description: Continuous replication streams or change data capture pipelines between source and target
+      actions:
+        - create
+        - get
+        - list
+        - pause
+        - resume
+        - delete
+    - name: validation-results
+      description: Output of validation gates run before, during, and after cutover
+      actions:
+        - list
+        - get
+        - run
+    - name: assessments
+      description: Discovery and assessment reports of source workloads, dependencies, and sizing
+      actions:
+        - create
+        - get
+        - list
+
+  actions:
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new resource
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+    - name: start
+      description: Start a migration, replication, or step
+      httpMethod: POST
+      pattern: action
+    - name: pause
+      description: Pause an in-progress migration or replication stream
+      httpMethod: POST
+      pattern: action
+    - name: resume
+      description: Resume a paused migration or replication stream
+      httpMethod: POST
+      pattern: action
+    - name: cancel
+      description: Cancel a migration before completion
+      httpMethod: POST
+      pattern: action
+    - name: approve
+      description: Approve a cutover plan to proceed
+      httpMethod: POST
+      pattern: action
+    - name: execute
+      description: Execute a cutover plan
+      httpMethod: POST
+      pattern: action
+    - name: rollback
+      description: Roll back to the source after a failed cutover
+      httpMethod: POST
+      pattern: destructive
+    - name: run
+      description: Run a validation check or assessment
+      httpMethod: POST
+      pattern: action
+
+  schemas:
+    core:
+      - name: MigrationProject
+        description: A migration project moving workloads, data, or schemas between environments
+        properties:
+          - id
+          - name
+          - migration_type
+          - strategy
+          - source
+          - target
+          - tool
+          - status
+          - started_at
+          - target_cutover_at
+          - completed_at
+          - owners
+          - tags
+      - name: CutoverPlan
+        description: An ordered runbook for executing the production cutover during a migration
+        properties:
+          - id
+          - migration_project_id
+          - name
+          - cutover_window
+          - downtime_budget_minutes
+          - steps
+          - validation_gates
+          - rollback_plan
+          - status
+          - approvers
+
+  enums:
+    migration_types:
+      - cloud
+      - database
+      - data
+      - tenant
+      - schema
+      - api
+      - code
+      - content
+    migration_strategies:
+      - rehost
+      - replatform
+      - refactor
+      - repurchase
+      - retire
+      - retain
+    project_statuses:
+      - planning
+      - assessment
+      - in-progress
+      - cutover
+      - validation
+      - completed
+      - rolled-back
+      - cancelled
+    cutover_statuses:
+      - draft
+      - scheduled
+      - in-progress
+      - completed
+      - rolled-back
+      - cancelled
+    step_statuses:
+      - pending
+      - in-progress
+      - completed
+      - failed
+      - skipped
+
+capability:
+  workflows:
+    - name: Cloud Lift and Shift
+      description: Discover, assess, replicate, and cut over on-premise workloads to a cloud provider with minimal application changes
+      apis:
+        - amazon-migration-hub
+        - microsoft-azure-migrate
+        - google-cloud-migration-center
+      personas:
+        - Cloud Migration Engineer
+      domains:
+        - Cloud Migration
+    - name: Heterogeneous Database Migration
+      description: Migrate transactional data between different database engines using continuous replication and a final cutover
+      apis:
+        - amazon-dms
+        - oracle-goldengate
+        - google-cloud-datastream
+      personas:
+        - Database Migration Engineer
+      domains:
+        - Database Migration
+    - name: SaaS Data Onboarding and Sync
+      description: Backfill and incrementally sync SaaS source data into a warehouse for analytics and downstream systems
+      apis:
+        - airbyte
+        - fivetran
+        - hotglue
+      personas:
+        - Data Engineer
+      domains:
+        - Data Movement
+    - name: Schema Migration at Deploy Time
+      description: Version and apply database schema and transformation changes alongside application code
+      apis:
+        - dbt
+      personas:
+        - Application Developer
+      domains:
+        - Schema Migration
+
+  personas:
+    - id: cloud-migration-engineer
+      name: Cloud Migration Engineer
+      description: Engineers responsible for planning and executing migrations of workloads from on-premise to cloud
+      workflows:
+        - Cloud Lift and Shift
+    - id: database-migration-engineer
+      name: Database Migration Engineer
+      description: Engineers responsible for replicating and cutting over databases between engines or environments
+      workflows:
+        - Heterogeneous Database Migration
+    - id: data-engineer
+      name: Data Engineer
+      description: Engineers moving and modeling data from operational sources into warehouses and lakes
+      workflows:
+        - SaaS Data Onboarding and Sync
+    - id: application-developer
+      name: Application Developer
+      description: Developers shipping schema and code changes alongside application releases
+      workflows:
+        - Schema Migration at Deploy Time
+
+  domains:
+    - name: Cloud Migration
+      description: Platforms and services for moving workloads from on-premise data centers or other clouds into a target cloud provider
+    - name: Database Migration
+      description: Tools that migrate and replicate data between database engines, often across different vendors
+    - name: Data Movement
+      description: ETL/ELT and change data capture platforms that continuously move data between operational and analytical systems
+    - name: Schema Migration
+      description: Tooling that versions and applies schema and transformation changes through source-controlled migration files
+
+crossReference:
+  - resource: migration-projects
+    operations:
+      - list
+      - get
+      - create
+      - start
+    workflows:
+      - Cloud Lift and Shift
+      - Heterogeneous Database Migration
+    personas:
+      - Cloud Migration Engineer
+      - Database Migration Engineer
+  - resource: cutover-plans
+    operations:
+      - create
+      - approve
+      - execute
+      - rollback
+    workflows:
+      - Cloud Lift and Shift
+      - Heterogeneous Database Migration
+    personas:
+      - Cloud Migration Engineer
+      - Database Migration Engineer
+  - resource: replication-streams
+    operations:
+      - create
+      - pause
+      - resume
+    workflows:
+      - Heterogeneous Database Migration
+      - SaaS Data Onboarding and Sync
+    personas:
+      - Database Migration Engineer
+      - Data Engineer

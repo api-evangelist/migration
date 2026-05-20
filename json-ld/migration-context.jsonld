@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "mig": "https://api-evangelist.github.io/migration/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+
+    "MigrationProject": "mig:MigrationProject",
+    "CutoverPlan": "mig:CutoverPlan",
+    "MigrationStep": "mig:MigrationStep",
+    "ValidationResult": "mig:ValidationResult",
+
+    "id": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "owners": {
+      "@id": "schema:author",
+      "@container": "@set"
+    },
+    "approvers": {
+      "@id": "prov:wasAssociatedWith",
+      "@container": "@set"
+    },
+
+    "migration_type": {
+      "@id": "mig:migration_type",
+      "@type": "xsd:string"
+    },
+    "strategy": {
+      "@id": "mig:strategy",
+      "@type": "xsd:string"
+    },
+    "source": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "target": {
+      "@id": "mig:target",
+      "@type": "@id"
+    },
+    "tool": {
+      "@id": "mig:tool",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "mig:status",
+      "@type": "xsd:string"
+    },
+    "started_at": {
+      "@id": "prov:startedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "completed_at": {
+      "@id": "prov:endedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "target_cutover_at": {
+      "@id": "mig:target_cutover_at",
+      "@type": "xsd:dateTime"
+    },
+    "platform": {
+      "@id": "mig:platform",
+      "@type": "xsd:string"
+    },
+    "region": {
+      "@id": "schema:addressRegion",
+      "@type": "xsd:string"
+    },
+
+    "migration_project_id": {
+      "@id": "mig:migration_project_id",
+      "@type": "xsd:string"
+    },
+    "cutover_window": {
+      "@id": "mig:cutover_window"
+    },
+    "start": {
+      "@id": "schema:startDate",
+      "@type": "xsd:dateTime"
+    },
+    "end": {
+      "@id": "schema:endDate",
+      "@type": "xsd:dateTime"
+    },
+    "timezone": {
+      "@id": "mig:timezone",
+      "@type": "xsd:string"
+    },
+    "downtime_budget_minutes": {
+      "@id": "mig:downtime_budget_minutes",
+      "@type": "xsd:integer"
+    },
+    "steps": {
+      "@id": "mig:steps",
+      "@container": "@list"
+    },
+    "order": {
+      "@id": "mig:order",
+      "@type": "xsd:integer"
+    },
+    "owner": {
+      "@id": "schema:author",
+      "@type": "xsd:string"
+    },
+    "expected_duration_minutes": {
+      "@id": "mig:expected_duration_minutes",
+      "@type": "xsd:integer"
+    },
+    "validation_gates": {
+      "@id": "mig:validation_gates",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "rollback_plan": {
+      "@id": "mig:rollback_plan"
+    },
+    "trigger": {
+      "@id": "mig:trigger",
+      "@type": "xsd:string"
+    },
+    "max_time_minutes": {
+      "@id": "mig:max_time_minutes",
+      "@type": "xsd:integer"
+    },
+
+    "tags": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    }
+  }
+}
