@@ -1,0 +1,196 @@
+meta:
+  name: Migration
+  description: An index and topic collection covering data migration, cloud migration,
+    database migration, and API migration platforms and services. Migration platforms
+    help organizations move workloads, databases, files, accounts, and applications
+    between environments, providers, or schemas while preserving integrity, minimizing
+    downtime, and tracking cutover progress. This collection includes cloud migration
+    services like AWS Application Migration Service, Azure Migrate, and Google Cloud
+    Migration Center; database migration and replication tools like AWS DMS, Oracle
+    GoldenGate, and Google Cloud Datastream; modern data movement platforms like Airbyte,
+    Fivetran, and Hotglue; and code, content, and tenant migration tooling used during
+    platform changeovers.
+  tags:
+  - Migration
+  - Data Migration
+  - Database Migration
+  - Cloud Migration
+  - API Migration
+  - Replication
+  - Cutover
+  portal: https://apievangelist.com
+  github: https://github.com/api-evangelist
+  repo: migration
+services_tools:
+- name: Airbyte
+  repo: https://github.com/api-evangelist/airbyte
+  apisio: https://providers.apis.io/providers/airbyte/
+- name: Alteryx
+  repo: https://github.com/api-evangelist/alteryx
+  apisio: https://providers.apis.io/providers/alteryx/
+- name: Amazon DataSync
+  repo: https://github.com/api-evangelist/amazon-datasync
+  apisio: https://providers.apis.io/providers/amazon-datasync/
+- name: Amazon DMS
+  repo: https://github.com/api-evangelist/amazon-dms
+  apisio: https://providers.apis.io/providers/amazon-dms/
+- name: Amazon Mainframe Modernization
+  repo: https://github.com/api-evangelist/amazon-mainframe-modernization
+  apisio: https://providers.apis.io/providers/amazon-mainframe-modernization/
+- name: Amazon Migration Hub
+  repo: https://github.com/api-evangelist/amazon-migration-hub
+  apisio: https://providers.apis.io/providers/amazon-migration-hub/
+- name: Azure Migrate
+  repo: https://github.com/api-evangelist/microsoft-azure-migrate
+  apisio: https://providers.apis.io/providers/microsoft-azure-migrate/
+- name: Azure Site Recovery
+  repo: https://github.com/api-evangelist/microsoft-azure-site-recovery
+  apisio: https://providers.apis.io/providers/microsoft-azure-site-recovery/
+- name: Boomi
+  repo: https://github.com/api-evangelist/boomi
+  apisio: https://providers.apis.io/providers/boomi/
+- name: Calypso Migration
+  repo: https://github.com/api-evangelist/calypso-migration
+  apisio: https://providers.apis.io/providers/calypso-migration/
+- name: CData
+  repo: https://github.com/api-evangelist/cdata
+  apisio: https://providers.apis.io/providers/cdata/
+- name: dbt
+  repo: https://github.com/api-evangelist/dbt
+  apisio: https://providers.apis.io/providers/dbt/
+- name: Debezium
+  repo: https://github.com/api-evangelist/debezium
+  apisio: https://providers.apis.io/providers/debezium/
+- name: Fivetran
+  repo: https://github.com/api-evangelist/fivetran
+  apisio: https://providers.apis.io/providers/fivetran/
+- name: Google Cloud Datastream
+  repo: https://github.com/api-evangelist/google-cloud-datastream
+  apisio: https://providers.apis.io/providers/google-cloud-datastream/
+- name: Google Cloud Migration Center
+  repo: https://github.com/api-evangelist/google-cloud-migration-center
+  apisio: https://providers.apis.io/providers/google-cloud-migration-center/
+- name: Google Cloud Transfer Service
+  repo: https://github.com/api-evangelist/google-cloud-transfer-service
+  apisio: https://providers.apis.io/providers/google-cloud-transfer-service/
+- name: Google Cloud VMware Engine
+  repo: https://github.com/api-evangelist/google-cloud-vmware-engine
+  apisio: https://providers.apis.io/providers/google-cloud-vmware-engine/
+- name: Hotglue
+  repo: https://github.com/api-evangelist/hotglue
+  apisio: https://providers.apis.io/providers/hotglue/
+- name: Informatica
+  repo: https://github.com/api-evangelist/informatica
+  apisio: https://providers.apis.io/providers/informatica/
+- name: Kafka Connect
+  repo: https://github.com/api-evangelist/kafka-connect
+  apisio: https://providers.apis.io/providers/kafka-connect/
+- name: Liblab
+  repo: https://github.com/api-evangelist/liblab
+  apisio: https://providers.apis.io/providers/liblab/
+- name: Oracle GoldenGate
+  repo: https://github.com/api-evangelist/oracle-goldengate
+  apisio: https://providers.apis.io/providers/oracle-goldengate/
+- name: Qlik
+  repo: https://github.com/api-evangelist/qlik
+  apisio: https://providers.apis.io/providers/qlik/
+- name: Stitch
+  repo: https://github.com/api-evangelist/stitch
+  apisio: https://providers.apis.io/providers/stitch/
+- name: Talend
+  repo: https://github.com/api-evangelist/talend
+  apisio: https://providers.apis.io/providers/talend/
+- name: Tray.io
+  repo: https://github.com/api-evangelist/tray-io
+  apisio: https://providers.apis.io/providers/tray-io/
+- name: Workato
+  repo: https://github.com/api-evangelist/workato
+  apisio: https://providers.apis.io/providers/workato/
+features:
+- name: Cloud Workload Migration
+  description: Services like AWS Application Migration Service, Azure Migrate, and
+    Google Cloud Migration Center lift and shift servers, VMs, and applications between
+    data centers and cloud providers with assessment, replication, and cutover tooling.
+- name: Database Migration and Replication
+  description: Database migration services like AWS DMS, Oracle GoldenGate, and Google
+    Cloud Datastream replicate transactional data between heterogeneous database engines
+    with change data capture and minimal downtime cutover.
+- name: Schema Migration and Versioning
+  description: Tooling like dbt, Liquibase, and Flyway version, diff, and apply schema
+    and transformation changes through migration files checked into source control
+    alongside application code.
+- name: ETL and Data Movement
+  description: Platforms like Airbyte, Fivetran, Hotglue, and Stitch extract data
+    from SaaS sources, APIs, and databases and load it into warehouses and lakes with
+    managed connectors and incremental sync.
+- name: Change Data Capture
+  description: Tools like Debezium and Kafka Connect stream row-level database changes
+    as events, enabling near-real-time replication, audit trails, and downstream system
+    synchronization during long-running migrations.
+- name: Assessment and Discovery
+  description: Migration assessment tools inventory existing servers, applications,
+    dependencies, and licenses to plan target architecture, sizing, and migration
+    waves before cutover begins.
+- name: Cutover Planning and Rollback
+  description: Migration platforms coordinate rehearsals, dependency ordering, cutover
+    windows, validation gates, and rollback procedures to reduce blast radius during
+    go-live.
+- name: API and Code Migration
+  description: SDK and API migration tooling like Liblab and OpenRewrite regenerate
+    client libraries and rewrite consumer code when APIs change versions, providers,
+    or specification standards.
+use_cases:
+- name: Data Center to Cloud Lift and Shift
+  description: Enterprises use AWS Application Migration Service, Azure Migrate, or
+    Google Cloud Migration Center to inventory on-premise workloads and replicate
+    them to the cloud with minimal application changes.
+- name: Heterogeneous Database Migration
+  description: Teams use AWS DMS or Oracle GoldenGate to migrate from legacy commercial
+    databases like Oracle and SQL Server to open-source or cloud-native engines such
+    as Postgres, Aurora, or BigQuery.
+- name: SaaS Data Onboarding
+  description: Data teams use Airbyte, Fivetran, or Stitch to backfill historical
+    data from SaaS sources like Salesforce, HubSpot, and Stripe into a warehouse and
+    keep it incrementally in sync.
+- name: Real-Time Replication and CDC
+  description: Engineering teams stand up Debezium and Kafka Connect to stream change
+    data capture events from operational databases into analytical systems, search
+    indexes, and microservices.
+- name: Cross-Tenant SaaS Migration
+  description: IT teams migrate mailboxes, files, and identities between Microsoft
+    365, Google Workspace, and Slack tenants during mergers, acquisitions, or restructurings
+    using dedicated tenant migration tooling.
+- name: Schema Evolution at Deploy Time
+  description: Application teams version SQL migrations alongside code using tools
+    like dbt, Liquibase, and Flyway so that schema changes deploy and roll back atomically
+    with releases.
+- name: API Version Cutover
+  description: API providers use migration tooling and codegen platforms like Liblab
+    to help consumers move between major versions of an API with regenerated SDKs
+    and rewritten call sites.
+integrations:
+- name: AWS Database Migration Service
+  description: Managed database migration and replication service supporting homogeneous
+    and heterogeneous migrations between Oracle, SQL Server, MySQL, Postgres, Aurora,
+    and analytics targets.
+- name: Azure Migrate
+  description: Unified hub for discovery, assessment, and migration of servers, databases,
+    web apps, and virtual desktops to Microsoft Azure.
+- name: Google Cloud Datastream
+  description: Serverless change data capture and replication service streaming changes
+    from Oracle, MySQL, and Postgres into BigQuery, Cloud SQL, and Cloud Storage.
+- name: Airbyte
+  description: Open-source data integration platform with 350+ connectors for moving
+    data from SaaS and database sources into warehouses and lakes.
+- name: Fivetran
+  description: Managed ELT platform with automated schema migration, normalization,
+    and incremental replication from operational sources to cloud data warehouses.
+- name: Oracle GoldenGate
+  description: Real-time data replication and integration platform for heterogeneous
+    database migration, high availability, and zero-downtime cutover.
+- name: Debezium
+  description: Open-source distributed change data capture platform built on Kafka
+    Connect for streaming row-level changes from MySQL, Postgres, MongoDB, and more.
+- name: dbt
+  description: Data transformation and modeling tool that versions schema and transformation
+    migrations as SQL and YAML alongside warehouse pipelines.

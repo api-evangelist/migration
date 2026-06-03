@@ -1,0 +1,25 @@
+title: Migration
+description: An index and topic collection covering data migration, cloud migration,
+  database migration, and API migration platforms and services. Migration platforms
+  help organizations move workloads, databases, files, accounts, and applications
+  between environments, providers, or schemas while preserving integrity, minimizing
+  downtime, and tracking cutover progress. This collection includes cloud migration
+  services like AWS Application Migration Service, Azure Migrate, and Google Cloud
+  Migration Center; database migration and replication tools like AWS DMS, Oracle
+  GoldenGate, and Google Cloud Datastream; modern data movement platforms like Airbyte,
+  Fivetran, and Hotglue; and code, content, and tenant migration tooling used during
+  platform changeovers.
+url: https://migration.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary
