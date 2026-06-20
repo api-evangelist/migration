@@ -6,7 +6,7 @@ description: >-
   includes cloud migration services like AWS Application Migration Service, Azure Migrate, and Google Cloud Migration Center; database migration and replication tools like AWS DMS, Oracle
   GoldenGate, and Google Cloud Datastream; modern data movement platforms like Airbyte, Fivetran, and Hotglue; and code, content, and tenant migration tooling used during platform changeovers.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Migration
 - Data Migration
