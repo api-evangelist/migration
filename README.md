@@ -1,121 +1,97 @@
-# Migration (migration)
+# Migration
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering data migration, cloud migration, database migration, and API migration platforms and services. Migration platforms help organizations move workloads, databases, files, accounts, and applications between environments, providers, or schemas while preserving integrity, minimizing downtime, and tracking cutover progress. This collection includes cloud migration services like AWS Application Migration Service, Azure Migrate, and Google Cloud Migration Center; database migration and replication tools like AWS DMS, Oracle GoldenGate, and Google Cloud Datastream; modern data movement platforms like Airbyte, Fivetran, and Hotglue; and code, content, and tenant migration tooling used during platform changeovers.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** Migration · Data Migration · Database Migration · Cloud Migration · API Migration · Replication · Cutover
 
-## Tags:
+## Migration on APIs.io
 
- - Migration, Data Migration, Database Migration, Cloud Migration, API Migration, Replication, Cutover
+Everything profiled for Migration is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/migration/](https://apis.io/providers/migration/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - Migration Project Schema](https://raw.githubusercontent.com/api-evangelist/migration/refs/heads/main/json-schema/migration-migration-project-schema.json)
-- [JSONSchema - Cutover Plan Schema](https://raw.githubusercontent.com/api-evangelist/migration/refs/heads/main/json-schema/migration-cutover-plan-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/migration/refs/heads/main/json-ld/migration-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/migration/refs/heads/main/vocabulary/migration-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Cloud Workload Migration | Services like AWS Application Migration Service, Azure Migrate, and Google Cloud Migration Center lift and shift servers, VMs, and applications between data centers and cloud providers with assessment, replication, and cutover tooling. |
-| Database Migration and Replication | Database migration services like AWS DMS, Oracle GoldenGate, and Google Cloud Datastream replicate transactional data between heterogeneous database engines with change data capture and minimal downtime cutover. |
-| Schema Migration and Versioning | Tooling like dbt, Liquibase, and Flyway version, diff, and apply schema and transformation changes through migration files checked into source control alongside application code. |
-| ETL and Data Movement | Platforms like Airbyte, Fivetran, Hotglue, and Stitch extract data from SaaS sources, APIs, and databases and load it into warehouses and lakes with managed connectors and incremental sync. |
-| Change Data Capture | Tools like Debezium and Kafka Connect stream row-level database changes as events, enabling near-real-time replication, audit trails, and downstream system synchronization during long-running migrations. |
-| Assessment and Discovery | Migration assessment tools inventory existing servers, applications, dependencies, and licenses to plan target architecture, sizing, and migration waves before cutover begins. |
-| Cutover Planning and Rollback | Migration platforms coordinate rehearsals, dependency ordering, cutover windows, validation gates, and rollback procedures to reduce blast radius during go-live. |
-| API and Code Migration | SDK and API migration tooling like Liblab and OpenRewrite regenerate client libraries and rewrite consumer code when APIs change versions, providers, or specification standards. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Data Center to Cloud Lift and Shift | Enterprises use AWS Application Migration Service, Azure Migrate, or Google Cloud Migration Center to inventory on-premise workloads and replicate them to the cloud with minimal application changes. |
-| Heterogeneous Database Migration | Teams use AWS DMS or Oracle GoldenGate to migrate from legacy commercial databases like Oracle and SQL Server to open-source or cloud-native engines such as Postgres, Aurora, or BigQuery. |
-| SaaS Data Onboarding | Data teams use Airbyte, Fivetran, or Stitch to backfill historical data from SaaS sources like Salesforce, HubSpot, and Stripe into a warehouse and keep it incrementally in sync. |
-| Real-Time Replication and CDC | Engineering teams stand up Debezium and Kafka Connect to stream change data capture events from operational databases into analytical systems, search indexes, and microservices. |
-| Cross-Tenant SaaS Migration | IT teams migrate mailboxes, files, and identities between Microsoft 365, Google Workspace, and Slack tenants during mergers, acquisitions, or restructurings using dedicated tenant migration tooling. |
-| Schema Evolution at Deploy Time | Application teams version SQL migrations alongside code using tools like dbt, Liquibase, and Flyway so that schema changes deploy and roll back atomically with releases. |
-| API Version Cutover | API providers use migration tooling and codegen platforms like Liblab to help consumers move between major versions of an API with regenerated SDKs and rewritten call sites. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Migration: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| AWS Database Migration Service | Managed database migration and replication service supporting homogeneous and heterogeneous migrations between Oracle, SQL Server, MySQL, Postgres, Aurora, and analytics targets. |
-| Azure Migrate | Unified hub for discovery, assessment, and migration of servers, databases, web apps, and virtual desktops to Microsoft Azure. |
-| Google Cloud Datastream | Serverless change data capture and replication service streaming changes from Oracle, MySQL, and Postgres into BigQuery, Cloud SQL, and Cloud Storage. |
-| Airbyte | Open-source data integration platform with 350+ connectors for moving data from SaaS and database sources into warehouses and lakes. |
-| Fivetran | Managed ELT platform with automated schema migration, normalization, and incremental replication from operational sources to cloud data warehouses. |
-| Oracle GoldenGate | Real-time data replication and integration platform for heterogeneous database migration, high availability, and zero-downtime cutover. |
-| Debezium | Open-source distributed change data capture platform built on Kafka Connect for streaming row-level changes from MySQL, Postgres, MongoDB, and more. |
-| dbt | Data transformation and modeling tool that versions schema and transformation migrations as SQL and YAML alongside warehouse pipelines. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### JSON Schema
-
-- [Migration Project Schema](json-schema/migration-migration-project-schema.json)
-- [Cutover Plan Schema](json-schema/migration-cutover-plan-schema.json)
-
-### JSON Structure
-
-- [Migration Project Structure](json-structure/migration-migration-project-structure.json)
-- [Cutover Plan Structure](json-structure/migration-cutover-plan-structure.json)
-
-### JSON-LD
-
-- [Migration Context](json-ld/migration-context.jsonld)
-
-## Vocabulary
-
-- [Migration Vocabulary](vocabulary/migration-vocabulary.yaml) — Unified taxonomy mapping resources, actions, workflows, and personas across cloud migration, database migration, data movement, and code migration platforms
-
-## Network
-
-This index references the following migration platform repositories:
-
-- [Airbyte](https://github.com/api-evangelist/airbyte)
-- [Alteryx](https://github.com/api-evangelist/alteryx)
-- [Amazon DataSync](https://github.com/api-evangelist/amazon-datasync)
-- [Amazon DMS](https://github.com/api-evangelist/amazon-dms)
-- [Amazon Mainframe Modernization](https://github.com/api-evangelist/amazon-mainframe-modernization)
-- [Amazon Migration Hub](https://github.com/api-evangelist/amazon-migration-hub)
-- [Azure Migrate](https://github.com/api-evangelist/microsoft-azure-migrate)
-- [Azure Site Recovery](https://github.com/api-evangelist/microsoft-azure-site-recovery)
-- [Boomi](https://github.com/api-evangelist/boomi)
-- [Calypso Migration](https://github.com/api-evangelist/calypso-migration)
-- [CData](https://github.com/api-evangelist/cdata)
-- [dbt](https://github.com/api-evangelist/dbt)
-- [Debezium](https://github.com/api-evangelist/debezium)
-- [Fivetran](https://github.com/api-evangelist/fivetran)
-- [Google Cloud Datastream](https://github.com/api-evangelist/google-cloud-datastream)
-- [Google Cloud Migration Center](https://github.com/api-evangelist/google-cloud-migration-center)
-- [Google Cloud Transfer Service](https://github.com/api-evangelist/google-cloud-transfer-service)
-- [Google Cloud VMware Engine](https://github.com/api-evangelist/google-cloud-vmware-engine)
-- [Hotglue](https://github.com/api-evangelist/hotglue)
-- [Informatica](https://github.com/api-evangelist/informatica)
-- [Kafka Connect](https://github.com/api-evangelist/kafka-connect)
-- [Liblab](https://github.com/api-evangelist/liblab)
-- [Oracle GoldenGate](https://github.com/api-evangelist/oracle-goldengate)
-- [Qlik](https://github.com/api-evangelist/qlik)
-- [Stitch](https://github.com/api-evangelist/stitch)
-- [Talend](https://github.com/api-evangelist/talend)
-- [Tray.io](https://github.com/api-evangelist/tray-io)
-- [Workato](https://github.com/api-evangelist/workato)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/migration/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
